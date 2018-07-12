@@ -22,7 +22,7 @@ end
 
 def list_songs(library)
   
-    library.each_value {|value|
+    @library.each_value {|value|
     puts value
     }
 end 

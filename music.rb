@@ -32,7 +32,8 @@ end
 #This method should take two arguments, the music library hash, and the artist. Remember, keys in hashes are symbols, so you'll need to expect the method to accept the artist as a symbol. 
 
 def delete_artist(hash, artist)
-  @library.delete(:taylor_swift)
+  hash.delete(artist)
+  hash 
 end 
 
 
@@ -40,7 +41,8 @@ end
 # This method should accept three arguments, the library hash, the artist, and the song.
 
 def add_song_and_artist(hash, artists, songs)
-  @library[:ed_sheeran] = "Thinking Out Loud"
+  hash[artists] = song 
+  hash
 end 
 
 
